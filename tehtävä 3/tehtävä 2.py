@@ -1,7 +1,16 @@
 hytti = str(input("Mikä seuraavista hytti luokista LUX,A,B C on hyttisi luokka?"))
 
-if hytti == LUX:
+if hytti == "LUX":
     print("Hyttisi on parvekkeellinen ja se on yläkannella.")
 
-if hytti == A
-    print("Hyttisi on ikkunallinen hytti autokannen yläpuolella.")
+elif hytti == "A":
+    print("Hyttisi on ikkunallinen ja se on autokannen yläpuolella.")
+
+elif hytti == "B":
+    print("Hyttisi on ikkunaton, mutta se on autokannen yläpuolella.")
+
+elif hytti == "C":
+    print("Hyttisi on ikkunaton ja se on autokannen alapuolella.")
+
+else:
+    print("Virheellinen hyttiluokka.")
