@@ -1,3 +1,7 @@
-vuosi = int(input("Mikä vuosi nyt on?"))
-    if (vuosi >= 100) and (vuosi / 4 == int()):
-    print("Vuosi on karkausvuosi.")
+
+vuosi = int(input("Syötä vuosi-numero:"))
+
+if (vuosi % 4 == 0 and vuosi % 100 != 0) or (vuosi % 400 == 0):
+    print(vuosi, "on karkausvuosi.")
+else:
+    print(vuosi, "ei ole karkausvuosi.")
