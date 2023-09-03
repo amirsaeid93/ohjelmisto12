@@ -1,4 +1,4 @@
-hytti = str(input("Mikä seuraavista hytti luokista LUX,A,B C on hyttisi luokka?"))
+hytti = str(input("Mikä seuraavista hyttiluokista LUX, A, B tai C on hyttisi luokka?"))
 
 if hytti == "LUX":
     print("Hyttisi on parvekkeellinen ja se on yläkannella.")
