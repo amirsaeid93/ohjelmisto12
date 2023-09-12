@@ -1,21 +1,12 @@
-rahaa = float(input("Anna rahan määrä:"))
+def tervehdi(kerrat):
+    for i in range(kerrat):
+        print ("Hyvää päivää " + str(i+1) + ". kerran")
+    return
 
-ehto = rahaa >= 5
-print(ehto)
-
-if rahaa >= 5:
-	print("saat latten.")
-
-	suutari = input("Anna suutarin nimi: ")
-	räätäli = input("Anna räätälin nimi: ")
-
-	if suutari == räätäli:
-		print("Hyvänen aika! Suutari ja räätäli ovat kaimoja!")
-
-	luku = float(input("Anna numero:"))
-	if luku > 0:
-		print("numero on positiivinen")
-	if luku == ("numero on nolla"):
-
-	if luku < 0:
-		print("numero on negatiivinen")
+print ("Päivä alkaa tervehdyksillä.")
+# annetaan argumenttina arvo 5
+tervehdi(1)
+print ("Tervehditään lisää.")
+tervehdi(1)
+kerrat = int(input("kuinka monta kertaa tervehditään?"))
+tervehdi(kerrat)
