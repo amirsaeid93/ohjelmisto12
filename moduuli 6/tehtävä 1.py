@@ -10,7 +10,7 @@ def heitä_noppa():
 def pää_funktio():
     while True:
         result = heitä_noppa()
-        print("The dice rolled:", result)
+        print(result)
         if result == 6:
             break
 
