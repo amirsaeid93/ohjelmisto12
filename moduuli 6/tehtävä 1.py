@@ -3,16 +3,16 @@
 Pääohjelma tulostaa kunkin heiton jälkeen saadun silmäluvun.
 """
 import random
-def heittää():
-    noppa = random.randint(1, 6)
-    while noppa != 6:
-        print(noppa)
-        noppa = random.randint(1, 6)
-    print("sait 6")
-    return
 
+def heitä_noppa():
+    return random.randint(1, 6)
 
-heittää()
+def pää_funktio():
+    while True:
+        result = heitä_noppa()
+        print("The dice rolled:", result)
+        if result == 6:
+            break
 
-
-
+if __name__ == "__main__":
+    pää_funktio()
